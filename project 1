@@ -1,0 +1,4 @@
+<script>
+    var myDiv = $('#your-div-id');
+  myDiv.text(myDiv.text().substring(0,300) + '<a href="#">Read  more</a>') 
+<script>  
