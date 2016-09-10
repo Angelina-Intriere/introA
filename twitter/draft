@@ -1,0 +1,12 @@
+<script>
+    var myTwitterText = prompt("What's Happening");
+
+    if (myTwitterText.length>140)
+    {
+    prompt("you are at your limit")
+    }
+    else
+    {
+    prompt("you can post or continue typing!")
+    }
+</script>  
