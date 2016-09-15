@@ -1,0 +1,15 @@
+<script>
+   
+    //sqrt((x1-x2)^2 + (y1-y2)^2)
+    function distance(xLocation1,xLocation2, yLocation1, yLocation2){
+        var xSide = (xLocation1-xLocation2)^2;
+        var ySide = (yLocation1-yLocation2)^2;
+        var Sum = xSide + ySide;
+        var result = Math.sqrt(Sum);
+        console.log("The result is: " +result);
+    }
+    
+    distance(19, 5, 100, 50);
+    
+    
+</script>
