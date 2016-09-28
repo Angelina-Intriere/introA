@@ -1,0 +1,78 @@
+<script>
+    var gradePointAverage = function(){
+    var Math1 = prompt("Math Grade Freshman Year");
+    var Math2 = prompt("Math Grade Sophomore Year");
+    var Math3 = prompt("Math Grade Junior Year");
+    var Math4 = prompt("Math Grade Senior Year");
+    var mathCum = (gradePointEquivalent(Math1) + gradePointEquivalent(Math2) + gradePointEquivalent(Math3) + gradePointEquivalent(Math4));
+        
+    var English1 = prompt("English Grade Freshman Year");
+    var English2 = prompt("English Grade Sophomore Year");
+    var English3 = prompt("English Grade Junior Year");
+    var English4 = prompt("English Grade Senior Year");
+    var englishCum = (gradePointEquivalent(English1) + gradePointEquivalent(English2) + gradePointEquivalent(English3) + gradePointEquivalent(English4));
+        
+    var SocialStudies1 = prompt("Social Studies Grade Freshman Year");
+    var SocialStudies2 = prompt("Social Studies Grade Sophomore Year");
+    var SocialStudies3 = prompt("Social Studies Grade Junior Year");
+    var SocialStudies4 = prompt("Social Studies Grade Senior Year");
+    var socialStudiesCum = (gradePointEquivalent(SocialStudies1) + gradePointEquivalent(SocialStudies2) + gradePointEquivalent(SocialStudies3) + gradePointEquivalent(SocialStudies4));
+        
+    var Science1 = prompt("Science Grade Freshman Year");
+    var Science2 = prompt("Science Grade Sophomore Year");
+    var Science3 = prompt("Science Grade Junior Year");
+    var Science4 = prompt("Science Grade Senior Year");
+    var scienceCum = (gradePointEquivalent(Science1) + gradePointEquivalent(Science2) + gradePointEquivalent(Science3) + gradePointEquivalent(Science4));
+        
+    var Language1 = prompt("World Language Grade Freshman Year");
+    var Language2 = prompt("World Language Grade Sophomore Year");
+    var Language3 = prompt("World Language Grade Junior Year");
+    var Language4 = prompt("World Language Grade Senior Year");
+    var languageCum = (gradePointEquivalent(Language1) + gradePointEquivalent(Language2) + gradePointEquivalent(Language3) + gradePointEquivalent(Language4));
+        
+    var ElectiveCum1 = prompt("Elective Cumalitive Freshman Year");
+    var ElectiveCum2 = prompt("Elective Cumalitive Sophomore Year");
+    var ElectiveCum3 = prompt("Elective Cumalitive Junior Year");
+    var ElectiveCum4 = prompt("Elective Cumalitive Senior Year");
+        var electiveCum = (gradePointEquivalent(ElectiveCum1) + gradePointEquivalent(ElectiveCum2) + gradePointEquivalent(ElectiveCum3) + gradePointEquivalent(ElectiveCum4));
+             
+    var GPA = ((mathCum + socialStudiesCum + englishCum + electiveCum + languageCum + scienceCum)/24);
+         prompt(GPA)
+                }
+    
+    
+    function gradePointEquivalent(withGrade){
+        pointValue = 0;
+        if (withGrade == "A+") {
+            pointValue = 4.0;
+        } else if (withGrade == "A") {
+            pointValue = 4.0;   
+        } else if (withGrade = "A-") {
+            pointValue = 3.7;
+        } else if (withGrade = "B+") {
+            pointValue = 3.3;
+       } else if (withGrade = "B") {
+            pointValue = 3.0;
+       } else if (withGrade = "B-") {
+            pointValue = 2.7;
+       } else if (withGrade = "C+") {
+            pointValue = 2.3;      
+       } else if (withGrade = "C") {
+            pointValue = 2.0;
+       } else if (withGrade = "C-") {
+            pointValue = 1.7;
+       } else if (withGrade = "D+") {
+            pointValue = 1.3;           
+       } else if (withGrade = "D") {
+            pointValue = 1.0;      
+       } else if (withGrade = "D-") {
+            pointValue = 0.7;       
+       } else if (withGrade = "F") {
+            pointValue = 0.0;      
+    
+       }
+        return pointValue;
+    }
+    
+    gradePointAverage();
+</script>
