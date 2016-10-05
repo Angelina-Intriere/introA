@@ -1,0 +1,34 @@
+<html>
+<head></head>
+<body>
+<<canvas id="myCanvas" width = "400" height = "400"></canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d")
+	var canvasWidth = 400;
+	var canvasHeight = 400;
+
+	ctx.fillStyle = "#c5322a";
+	ctx.fillRect(0,0,0.45*canvasWidth,0.375*canvasHeight);
+
+	ctx.fillStyle = "#232225";
+	ctx.fillRect(0.45*canvasWidth,0,0.015*canvasWidth,1.0*canvasHeight);
+	ctx.fillStyle = "#232225";
+	ctx.fillRect(0,0.375*canvasHeight,1.0*canvasWidth,0.015*canvasHeight);
+	ctx.fillStyle = "#232225";
+	ctx.fillRect(0,0.6*canvasHeight,1.0*canvasWidth,0.015*canvasHeight);
+	ctx.fillStyle = "#232225";
+	ctx.fillRect(0.075*canvasWidth,0.6*canvasHeight,0.01*canvasHeight,0.39*canvasHeight);
+	ctx.fillStyle = "#232225";
+	ctx.fillRect(0.8*canvasWidth,0.615*canvasHeight,0.015*canvasWidth,0.4*canvasHeight);
+	ctx.fillRect(0.45*canvasWidth,0.925*canvasHeight,0.35*canvasWidth,0.015*canvasHeight);
+
+	ctx.fillStyle = "fbd603";
+	ctx.fillRect(0,0.615*canvasHeight,0.075*canvasWidth,0.375*canvasHeight);
+
+	ctx.fillStyle = "#171060";
+	ctx.fillRect(0.465*canvasWidth,0.615*canvasHeight,0.335*canvasWidth,0.31*canvasHeight);
+
+</script>
+</body>
+</html>
