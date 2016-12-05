@@ -1,15 +1,33 @@
-<script>
-   
-    //sqrt((x1-x2)^2 + (y1-y2)^2)
-    function distance(xLocation1,xLocation2, yLocation1, yLocation2){
-        var xSide = (xLocation1-xLocation2)^2;
-        var ySide = (yLocation1-yLocation2)^2;
-        var Sum = xSide + ySide;
-        var result = Math.sqrt(Sum);
-        console.log("The result is: " +result);
-    }
-    
-    distance(19, 5, 100, 50);
-    
-    
-</script>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Christmas Countdown</title>
+</head>
+<body>
+<div id="rightcolumn">
+    <div id='timer' class='test'></div>
+	<link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
+	<link rel="stylesheet" href = "styleSheetHoliday.css">
+</head>
+<body>
+	<div class="bigWrapper">
+<h1 class= "centerMe"> Happy Holidays! </h1>
+	<div id="photoWrapper">
+		<img src="" id="thePhoto">
+			<button type="button" id="backButton">Back</button>
+	<button type="button" id="forwardButton">Forward</button>
+<p class="centerMe"> Hope your holidays are filled with love, bliss, and joy!
+	<div id="piechart"></div>
+<audio controls="controls">
+	<source src="ChristmasMusic.mp3">
+</audio>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"
+		text="text/javascript"></script>
+<script src="myjs.js" type="text/javascript"></script>
+<canvas id="canvas" width="200" height="200"></canvas>
+<script src="animation.js" type="text/javascript"></script>
+</div>
+<div>
+</body>
+</html>

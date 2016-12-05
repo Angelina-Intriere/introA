@@ -1,0 +1,64 @@
+body {
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #ffffff;
+}
+#photoWrapper {
+	width: 50%;
+	margin-left: 25%;
+	background: #DFE0E4;
+	padding: 10px 10px 10px 10px;
+}
+#thePhoto {
+	width: 100%;
+}
+button{
+	background: #2F382F;
+	color: white;
+}
+#forwardButton {
+	position: relative;
+	float: right;	
+}
+.centerMe {
+	text-align: center;
+	color: 	#222423;
+
+}
+
+.bigWrapper {
+	background-color: #B6CDDB;
+
+	padding: 20px 20px 20px 20px;
+}
+h1 {
+	font-family: 'Codystar', bold;
+}
+
+audio {
+	margin-left: 24%;
+	width: 50%;
+}
+
+canvas {
+	position: absolute;
+	top:0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events:none;
+
+}
+
+#timer{
+    background-color: rgba( 256, 256, 256, 0.9);
+    color: #B6CDDB;
+    font-family: verdana, sans-serif;
+    font-size: 2.0em;
+    padding: 1em;
+    text-align: center;
+ 
+} 
+
+
