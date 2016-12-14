@@ -1,0 +1,96 @@
+<html>
+<head>
+
+<style>
+h3 {
+	font-family: "Binarung", Georgia, Serif;
+	text-decoration: underline;
+}
+p{
+	font-family: "Binarung", Georgia, Serif;
+	background-color: #B19CD9;
+}
+a{
+	font-family: "Binarung", Georgia, Serif;
+	color: #1c0756 ;
+}
+#banner {
+	width: 100%;
+}
+.photoGallery{
+	width: 100px;
+}
+
+</style>
+</head>
+<body>
+<img id="banner" src="apple.jpg">
+<img sRc="CNN.jpg">
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+
+	<script type= "text/javascript">
+//Here's a function to get RSS information
+//input parameter: url = url of the rss feed you want
+function getRSSFeed(url) {
+	var rssurl = encodeURIComponent(url);
+	var baseurl = "http://codeghs.com/scripts/rss.php?feedurl=" + rssurl;
+		$.ajax({
+		url: baseurl,
+		type: 'GET',
+		success: function(data){
+			console.log(data);
+			generatePageContent($.parseJSON(data).item);
+		}
+
+	});
+}
+
+
+function generatePageContent(pageData) {
+
+
+	
+
+	var audio = document.createElement('audio');
+	var source = document.createElement('source');
+	$(audio).attr('controls', '');
+	$(source).attr('src', "ChristmasMusic.mp3");
+	$(audio).append(source);
+	$('body').append(audio);
+
+
+	for (var i = 0; i < pageData.length; i++){
+		var item = pageData[i];
+		var itemTitle = item.title;
+		var itemDescription = item.description;
+		var itemLink = item.link;
+		var contentBox = document.createElement('div');
+		var title = document.createElement('h3');
+		var description = document.createElement('p');
+		var link = document.createElement('a');
+		var image = document.createElement('img'); 
+		//initial appends
+		$(image).addClass('photoGallery');
+		$(image).attr('src','apple.jpg');
+		$(image).addClass('photoGallery');
+		$(image).attr('sRc', 'CNN.jpg');
+		$(link).append(title);
+		$(link).attr('href', itemLink);
+		$(contentBox).append(link);
+		$(contentBox).append(description);
+		$(contentBox).append(image);
+		$(title).append(itemTitle);
+		$(description).append(itemDescription);
+
+		//final append
+		$('body').append(contentBox);
+
+	}
+}
+
+getRSSFeed("http://rss.cnn.com/rss/cnn_topstories.rss")
+
+</script>
+</body>
+</html>
